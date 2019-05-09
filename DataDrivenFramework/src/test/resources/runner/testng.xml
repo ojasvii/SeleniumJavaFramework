@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="listeners.CustomListeners"></listener>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+		
+		
+	</listeners>
+	
+	<test name="Log in">
+		<classes>
+			<class name="testcases.TestCase1" />
+		</classes>
+	</test> <!-- Test -->
+
+	
+</suite> <!-- Suite -->
+
+<!-- one single <test></test> tag is treated as one single test case -->
